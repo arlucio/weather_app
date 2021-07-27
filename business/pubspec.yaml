@@ -1,0 +1,41 @@
+name: business
+description: Showcase of my implementation of a weather app using Bloc and Cubit
+homepage: https://github.com/arlucio
+publish_to: 'none'
+
+version: 0.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Architecture and Tools
+  bloc: ^7.0.0
+  flutter_bloc: ^7.0.1
+  bloc_test: ^8.0.2
+  # Weather related
+  weather: ^2.0.1
+  weather_icons: ^3.0.0-nullsafety.0
+  # Immutability, serialization and enum classes
+  built_value: ^8.1.0
+  built_collection: ^5.1.0
+  # Persistent Local State
+  hydrated_bloc: ^7.0.1 # Uses Hive for persistent local state
+  # Repositories:
+  weather_repository:
+    path: ../packages/weather_repository
+  search_repository:
+    path: ../packages/search_repository
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^2.0.5
+  built_value_generator: ^8.1.0
+  pedantic: ^1.11.1

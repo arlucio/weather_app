@@ -1,0 +1,41 @@
+name: weather_app
+description: Showcase of my implementation of a weather app using Bloc and Cubit
+homepage: https://github.com/arlucio
+publish_to: 'none'
+
+version: 0.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  business:
+    path: ../business/
+
+  built_value: ^8.1.0
+
+  # Widgets
+  material_floating_search_bar: ^0.3.4
+  implicitly_animated_reorderable_list: ^0.4.0
+  auto_size_text: ^3.0.0-nullsafety.0
+  flutter_spinkit: ^5.0.0
+  pull_to_refresh: ^2.0.0
+
+  # Style:
+  google_fonts: ^2.1.0
+  weather_icons: ^3.0.0-nullsafety.0
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  mocktail: ^0.1.4
+
+
+flutter:
+  uses-material-design: true
